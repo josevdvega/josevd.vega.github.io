@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Avanzado: Reloj en Tiempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Tutorial de React</h1>
+    </header>
+
+    <!-- Menú de Navegación Principal -->
+    <nav>
+        <ul>
+            <li><a href="justificacion.html">¿Qué es React?</a></li>
+            <li><a href="instalacion.html">Instalación</a></li>
+            <li><a href="primeros-pasos.html">Primeros Pasos</a></li>
+            <li><a href="utilizacion.html">Utilización de React</a></li>
+            <li><a href="funcionamiento.html">Funcionamiento</a></li>
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="ejemplo.html">Ejemplo Avanzado: Reloj en Tiempo Real</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la Sección Ejemplo Avanzado -->
+    <section id="ejemplo">
+        <h2>Ejemplo Avanzado: Reloj en Tiempo Real</h2>
+        
+        <p>En este ejemplo, vamos a crear un reloj que muestra la hora actual y se actualiza automáticamente cada segundo. Esto nos ayudará a entender cómo funcionan los componentes en React y cómo podemos hacer que se actualicen en tiempo real.</p>
+        
+        <h3>Paso 1: Crear el Componente Reloj</h3>
+        <p>Primero, crearemos un nuevo componente llamado <code>Reloj.js</code>. Este componente será responsable de mostrar la hora actual.</p>
+
+        <pre><code>import React, { useState, useEffect } from 'react';
+
+function Reloj() {
+    const [hora, setHora] = useState(new Date().toLocaleTimeString());
+
+    useEffect(() => {
+        const intervalo = setInterval(() => {
+            setHora(new Date().toLocaleTimeString());
+        }, 1000);
+
+        // Limpieza del intervalo cuando el componente se desmonta
+        return () => clearInterval(intervalo);
+    }, []);
+
+    return (
+        <div>
+            <h1>Hora Actual: {hora}</h1>
+        </div>
+    );
+}
+
+export default Reloj;</code></pre>
+
+        <h3>¿Qué hace este código?</h3>
+        <ul>
+            <li>Importamos <code>useState</code> y <code>useEffect</code> de React para manejar el estado y los efectos secundarios.</li>
+            <li>Inicializamos el estado <code>hora</code> con la hora actual.</li>
+            <li>Usamos <code>setInterval</code> dentro de <code>useEffect</code> para actualizar la hora cada segundo.</li>
+            <li>Finalmente, mostramos la hora en el componente.</li>
+        </ul>
+
+        <h3>Paso 2: Usar el Componente Reloj en App.js</h3>
+        <p>Ahora, necesitamos importar y usar nuestro nuevo componente <code>Reloj</code> en <code>App.js</code>.</p>
+
+        <pre><code>import React from 'react';
+import Reloj from './Reloj';
+
+function App() {
+    return (
+        <div className="App">
+            <Reloj />
+        </div>
+    );
+}
+
+export default App;</code></pre>
+
+        <h3>Ejecutando la Aplicación</h3>
+        <p>Una vez que hayas hecho esto, guarda todos los archivos y ejecuta tu aplicación con <code>npm start</code>. Deberías ver el reloj mostrando la hora actual, actualizándose cada segundo.</p>
+
+        <h3>Consejos Finales</h3>
+        <p>Intenta experimentar con el componente. Por ejemplo, puedes agregar más estilos, cambiar el formato de la hora, o incluso agregar la fecha. Esto te ayudará a comprender mejor cómo funciona React y cómo puedes manipular el estado en tus aplicaciones.</p>
+    </section>
+
+    <!-- Enlace para regresar a la página de inicio -->
+    <footer>
+        <p><a href="index.html">Regresar a la Página de Inicio</a></p>
+    </footer>
+
+</body>
+</html>

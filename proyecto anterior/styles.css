@@ -1,0 +1,152 @@
+/* Estilos generales para todas las páginas */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e3a5f;
+    color: #fff;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    padding: 10px;
+    border: 5px solid gold;
+    color: black;
+    background-color: #1e3a5f;
+    display: inline-block;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid gold;
+    border-radius: 5px;
+    display: block;
+    background-color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #ff6b35;
+}
+
+.contenido {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.recuadro {
+    background-color: #ffcc00; /* Fondo más llamativo */
+    color: #000;
+    border: 2px solid #ffcc00;
+    padding: 30px; /* Más espacio para dar respiro al contenido */
+    margin: 15px 0;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 18px; /* Aumenta el tamaño de la letra */
+}
+
+.recuadro h3 {
+    font-size: 24px; /* Tamaño más grande para el título */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recuadro:hover {
+    background-color: #fff; /* Fondo blanco al pasar el cursor */
+    color: #000;
+    transform: scale(1.05); /* Efecto de agrandarse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Efecto de sombra al pasar el cursor */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Estilos para la página de Lenguaje Máquina */
+
+.recuadro-contenido {
+    display: flex;
+    background-color: #ffcc00;
+    color: #000;
+    border: 2px solid #ffcc00;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recuadro-contenido:hover {
+    background-color: #fff;
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.columna-imagen {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.columna-imagen img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.columna-texto {
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.boton-regreso {
+    display: inline-block;
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    margin-top: 20px; /* Espaciado superior */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+}
+
+.boton-regreso:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}

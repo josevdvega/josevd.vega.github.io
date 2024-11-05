@@ -3,53 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenguajes de Programación y sus Niveles de Dificultad</title>
+    <title>Tutorial de React</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Encabezado Principal -->
     <header>
-        <h1>Lenguajes de Programación y sus Niveles de Dificultad</h1>
-        <nav>
-            <div class="menu-icon" onclick="toggleMenu()">
-                &#9776;
-            </div>
-            <ul id="menu">
-                <li><a href="maquina.html">Máquina</a></li>
-                <li><a href="bajo-nivel.html">Bajo Nivel</a></li>
-                <li><a href="alto-nivel.html">Alto Nivel</a></li>
-                <li><a href="mediano-nivel.html">Mediano Nivel</a></li>
-            </ul>
-        </nav>
+        <h1>Tutorial de React</h1>
+        <p>Aprende los conceptos básicos de React, desde su instalación hasta ejemplos interactivos.</p>
     </header>
 
-    <section class="contenido">
-        <div class="recuadro" onclick="location.href='maquina.html'">
-            <h3>Lenguaje Máquina</h3>
-            <p>El lenguaje máquina es el nivel más bajo de programación y se compone únicamente de instrucciones binarias (0s y 1s) que la CPU puede ejecutar directamente. Cada procesador tiene su propio conjunto de instrucciones, lo que lo hace específico para el hardware. Es el único lenguaje que las computadoras pueden interpretar sin necesidad de traducción.</p>
-        </div>
-        <div class="recuadro" onclick="location.href='bajo-nivel.html'">
-            <h3>Lenguaje de Bajo Nivel</h3>
-            <p>Los lenguajes de bajo nivel, como el ensamblador, permiten al programador escribir instrucciones muy cercanas al lenguaje máquina, pero usando códigos mnemotécnicos que representan operaciones básicas. Aunque son más fáciles de entender que el lenguaje máquina, siguen siendo difíciles de usar y propensos a errores.</p>
-        </div>
-        <div class="recuadro" onclick="location.href='alto-nivel.html'">
-            <h3>Lenguaje de Alto Nivel</h3>
-            <p>Los lenguajes de alto nivel, como Python, Java y C++, están diseñados para ser fáciles de usar y entender por los programadores. Son independientes del hardware y permiten centrarse más en la lógica del problema que en los detalles de la máquina, pero a cambio ofrecen menos control sobre el hardware.</p>
-        </div>
-        <div class="recuadro" onclick="location.href='mediano-nivel.html'">
-            <h3>Lenguaje de Mediano Nivel</h3>
-            <p>El lenguaje de mediano nivel combina características de lenguajes de bajo y alto nivel. Un ejemplo sería C, que permite acceso directo a la memoria y control sobre el hardware, al mismo tiempo que proporciona funciones de abstracción más fáciles de usar que los lenguajes de bajo nivel.</p>
-        </div>
+    <!-- Menú de Navegación Principal -->
+    <nav>
+        <ul>
+            <li><a href="justificacion.html">¿Qué es React?</a></li>
+            <li><a href="instalacion.html">Instalación</a></li>
+            <li><a href="primeros-pasos.html">Primeros Pasos</a></li>
+            <li><a href="utilizacion.html">Utilización de React</a></li>
+            <li><a href="funcionamiento.html">Funcionamiento</a></li>
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="ejemplo.html">Ejemplo Avanzado: Reloj en Tiempo Real</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Introducción/Resumen -->
+    <section id="intro">
+        <h2>Introducción</h2>
+        <p>React es una biblioteca de JavaScript desarrollada por Facebook que permite crear interfaces de usuario interactivas. Este tutorial te guiará a través de los fundamentos de React, ayudándote a construir aplicaciones web dinámicas y fáciles de mantener.</p>
     </section>
 
-    <footer>
-        <p>Actividad: Creación de un Blog - José Vega</p>
-    </footer>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('menu');
-            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-        }
-    </script>
 </body>
 </html>
+

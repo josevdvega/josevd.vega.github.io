@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación de React</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Tutorial de React</h1>
+    </header>
+
+    <!-- Menú de Navegación Principal -->
+    <nav>
+        <ul>
+            <li><a href="justificacion.html">¿Qué es React?</a></li>
+            <li><a href="instalacion.html">Instalación</a></li>
+            <li><a href="primeros-pasos.html">Primeros Pasos</a></li>
+            <li><a href="utilizacion.html">Utilización de React</a></li>
+            <li><a href="funcionamiento.html">Funcionamiento</a></li>
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="ejemplo.html">Ejemplo Avanzado: Reloj en Tiempo Real</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la Sección Instalación -->
+    <section id="instalacion">
+        <h2>Instalación de React</h2>
+
+        <h3>¿Se necesita instalación?</h3>
+        <p>Sí, React necesita instalarse antes de poder utilizarlo. Para ello, vamos a seguir unos pasos detallados que asegurarán que tu equipo esté preparado para crear proyectos en React.</p>
+
+        <h3>Paso 1: Instalar Node.js</h3>
+        <p>React se basa en <strong>Node.js</strong> y su administrador de paquetes, <strong>npm</strong>. Para instalar Node.js, visita la página oficial: <a href="https://nodejs.org/" target="_blank">https://nodejs.org/</a> y selecciona la última versión recomendada. Sigue las instrucciones de instalación del instalador para tu sistema operativo.</p>
+
+        <h3>Paso 2: Crear una carpeta de proyectos</h3>
+        <p>Para mantener tus proyectos organizados, crea una carpeta en tu equipo donde guardarás cada uno de los proyectos que realices en React. Puedes crear esta carpeta en cualquier ubicación; te sugerimos llamarla <code>ReactProjects</code> en un lugar fácil de recordar, como en el escritorio o en la carpeta Documentos.</p>
+
+        <h3>Paso 3: Crear un nuevo proyecto de React</h3>
+        <p>Abre la terminal (o símbolo del sistema) y navega hasta la carpeta <code>ReactProjects</code>. Para hacer esto, usa el siguiente comando en la terminal:</p>
+        
+        <pre><code>cd [ruta_a_tu_carpeta_ReactProjects]</code></pre>
+        
+        <p>Una vez que estés dentro de la carpeta, escribe el siguiente comando para crear un nuevo proyecto:</p>
+        
+        <pre><code>npx create-react-app nombre-del-proyecto</code></pre>
+
+        <p>Reemplaza <code>nombre-del-proyecto</code> con el nombre que quieras darle a tu proyecto. Este comando creará una nueva carpeta con el nombre de tu proyecto dentro de <code>ReactProjects</code>. Todos los archivos y configuraciones de React se guardarán en esta carpeta específica.</p>
+
+        <h3>Paso 4: Entender la estructura del proyecto</h3>
+        <p>Después de la instalación, dentro de la carpeta del proyecto encontrarás varias subcarpetas y archivos:</p>
+        <ul>
+            <li><strong>public</strong>: Contiene archivos públicos que el navegador puede ver directamente.</li>
+            <li><strong>src</strong>: Aquí se encuentran los archivos principales de tu aplicación. Es donde está <code>App.js</code>, el archivo que usaremos como base.</li>
+            <li><strong>node_modules</strong>: Contiene las dependencias (bibliotecas) que React necesita para funcionar. No es necesario modificar esta carpeta.</li>
+        </ul>
+
+        <h3>Paso 5: Configurar variables de entorno</h3>
+        <p>Para la mayoría de los proyectos de React, no necesitarás configurar variables de entorno al inicio. Sin embargo, a medida que avances, es posible que desees almacenar información privada, como claves de API, en un archivo especial llamado <code>.env</code> en la raíz del proyecto.</p>
+
+        <h3>Paso 6: Iniciar el proyecto</h3>
+        <p>Para asegurarte de que todo está funcionando, navega hasta la carpeta de tu proyecto (si no estás allí ya) con el comando:</p>
+        
+        <pre><code>cd nombre-del-proyecto</code></pre>
+        
+        <p>Luego, inicia el proyecto con el siguiente comando:</p>
+        
+        <pre><code>npm start</code></pre>
+        
+        <p>Este comando abrirá automáticamente tu aplicación en el navegador y mostrará una página de inicio de React, lo cual indica que la instalación fue exitosa.</p>
+
+    </section>
+
+    <!-- Enlace para regresar a la página de inicio -->
+    <footer>
+        <p><a href="index.html">Regresar a la Página de Inicio</a></p>
+    </footer>
+
+</body>
+</html>

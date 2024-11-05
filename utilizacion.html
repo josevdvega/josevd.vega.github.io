@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilización de React</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Tutorial de React</h1>
+    </header>
+
+    <!-- Menú de Navegación Principal -->
+    <nav>
+        <ul>
+            <li><a href="justificacion.html">¿Qué es React?</a></li>
+            <li><a href="instalacion.html">Instalación</a></li>
+            <li><a href="primeros-pasos.html">Primeros Pasos</a></li>
+            <li><a href="utilizacion.html">Utilización de React</a></li>
+            <li><a href="funcionamiento.html">Funcionamiento</a></li>
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="ejemplo.html">Ejemplo Avanzado: Reloj en Tiempo Real</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la Sección Utilización de React -->
+    <section id="utilizacion">
+        <h2>Utilización de React</h2>
+
+        <h3>¿Cómo empezar a crear una aplicación base?</h3>
+        <p>Ahora que tienes React instalado y listo para usar, ¡vamos a crear tu primera aplicación!</p>
+
+        <h4>Paso 1: Asegúrate de estar en la carpeta del proyecto</h4>
+        <p>Abre la terminal y navega hasta la carpeta de tu proyecto si no estás ahí. Por ejemplo, si tu proyecto se llama <code>mi-primera-app</code>, usa el siguiente comando:</p>
+        
+        <pre><code>cd mi-primera-app</code></pre>
+
+        <h4>Paso 2: Edita el archivo <code>App.js</code></h4>
+        <p>El archivo <code>App.js</code> es como el "corazón" de tu aplicación, ya que es el punto donde se construye la interfaz principal. Para editar este archivo:</p>
+        <ul>
+            <li>Abre la carpeta <code>src</code> dentro de tu proyecto.</li>
+            <li>Busca el archivo llamado <code>App.js</code>.</li>
+            <li>Ábrelo en el editor de texto de tu preferencia (por ejemplo, Visual Studio Code).</li>
+        </ul>
+
+        <h4>Paso 3: Escribe tu primer código de React en <code>App.js</code></h4>
+        <p>Dentro de <code>App.js</code>, verás algunas líneas de código que generan la interfaz básica. Puedes modificar el contenido de la función <code>App</code> para mostrar un mensaje personalizado:</p>
+
+        <pre><code>function App() {
+    return (
+        <div className="App">
+            <h1>¡Hola, Mundo en React!</h1>
+            <p>Esta es mi primera aplicación de React.</p>
+        </div>
+    );
+}
+
+export default App;</code></pre>
+
+        <p>Este código cambiará la página inicial para mostrar el mensaje <strong>¡Hola, Mundo en React!</strong> y un párrafo.</p>
+
+        <h3>¿Cómo visualizar los resultados de la ejecución?</h3>
+        <p>Para ver tu aplicación en el navegador, asegúrate de estar en la carpeta de tu proyecto en la terminal y escribe el siguiente comando:</p>
+
+        <pre><code>npm start</code></pre>
+
+        <p>Este comando abrirá automáticamente una ventana en tu navegador y mostrará tu aplicación. Cualquier cambio que hagas en <code>App.js</code> se reflejará en el navegador una vez que guardes el archivo.</p>
+
+        <h4>Consejo:</h4>
+        <p>Si no se actualiza automáticamente, puedes actualizar la página en tu navegador para ver los cambios. También puedes usar la combinación de teclas <strong>Ctrl + R</strong> (Windows) o <strong>Cmd + R</strong> (Mac).</p>
+    </section>
+
+    <!-- Enlace para regresar a la página de inicio -->
+    <footer>
+        <p><a href="index.html">Regresar a la Página de Inicio</a></p>
+    </footer>
+
+</body>
+</html>

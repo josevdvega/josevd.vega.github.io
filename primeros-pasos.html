@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeros Pasos con React</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Tutorial de React</h1>
+    </header>
+
+    <!-- Menú de Navegación Principal -->
+    <nav>
+        <ul>
+            <li><a href="justificacion.html">¿Qué es React?</a></li>
+            <li><a href="instalacion.html">Instalación</a></li>
+            <li><a href="primeros-pasos.html">Primeros Pasos</a></li>
+            <li><a href="utilizacion.html">Utilización de React</a></li>
+            <li><a href="funcionamiento.html">Funcionamiento</a></li>
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="ejemplo.html">Ejemplo Avanzado: Reloj en Tiempo Real</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la Sección Primeros Pasos -->
+    <section id="primeros-pasos">
+        <h2>Primeros Pasos con React</h2>
+        
+        <h3>Tu primer componente: ¡Hola Mundo!</h3>
+        <p>En React, todo comienza con los <strong>componentes</strong>. Los componentes son bloques de construcción que crean la interfaz de usuario. En este primer ejemplo, crearemos un simple componente que muestra un mensaje: "¡Hola, Mundo!"</p>
+        
+        <h3>Paso 1: Encuentra y abre el archivo App.js</h3>
+        <p>Dentro de la carpeta de tu proyecto, verás varias subcarpetas y archivos. Busca la carpeta llamada <code>src</code> y dentro de ella encontrarás el archivo <code>App.js</code>.</p>
+        <p>Para abrir el archivo, puedes usar cualquier editor de texto, como Visual Studio Code, Atom o incluso el Bloc de Notas. Si estás usando Visual Studio Code, haz clic derecho en <code>App.js</code> y selecciona "Abrir con Visual Studio Code".</p>
+        
+        <h3>Paso 2: Crea un componente en React</h3>
+        <p>Con el archivo <code>App.js</code> abierto, verás algo de código que puedes reemplazar por el siguiente:</p>
+        
+        <pre>
+<code>
+// App.js
+
+import React from 'react';
+
+function App() {
+    return (
+        &lt;div&gt;
+            &lt;h1&gt;¡Hola, Mundo!&lt;/h1&gt;
+        &lt;/div&gt;
+    );
+}
+
+export default App;
+</code>
+        </pre>
+
+        <h3>Paso 3: Ejecuta el proyecto</h3>
+        <p>En la terminal, ejecuta el siguiente comando para iniciar tu proyecto:</p>
+        <pre><code>npm start</code></pre>
+        <p>Esto abrirá tu proyecto en el navegador y verás el mensaje "¡Hola, Mundo!" en la pantalla. ¡Felicidades! Has creado tu primer componente en React.</p>
+
+        <h3>¿Qué aprendimos?</h3>
+        <p>Este simple ejemplo muestra cómo React toma componentes y los convierte en elementos visuales en la página. Puedes pensar en un componente como una "pieza" del sitio web que puedes reutilizar en diferentes partes.</p>
+    </section>
+
+    <!-- Enlace para regresar a la página de inicio -->
+    <footer>
+        <p><a href="index.html">Regresar a la Página de Inicio</a></p>
+    </footer>
+
+</body>
+</html>

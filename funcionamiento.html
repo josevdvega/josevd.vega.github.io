@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionamiento de React</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado Principal -->
+    <header>
+        <h1>Tutorial de React</h1>
+    </header>
+
+    <!-- Menú de Navegación Principal -->
+    <nav>
+        <ul>
+            <li><a href="justificacion.html">¿Qué es React?</a></li>
+            <li><a href="instalacion.html">Instalación</a></li>
+            <li><a href="primeros-pasos.html">Primeros Pasos</a></li>
+            <li><a href="utilizacion.html">Utilización de React</a></li>
+            <li><a href="funcionamiento.html">Funcionamiento</a></li>
+            <li><a href="conclusiones.html">Conclusiones</a></li>
+            <li><a href="ejemplo.html">Ejemplo Avanzado: Reloj en Tiempo Real</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido de la Sección Funcionamiento de React -->
+    <section id="funcionamiento">
+        <h2>Explicación del Funcionamiento del Framework</h2>
+
+        <h3>¿Sobre qué actúa React?</h3>
+        <p>React actúa principalmente sobre la interfaz de usuario (UI) de una aplicación web. Esto incluye elementos como botones, textos, imágenes y cualquier otra parte que veas en la pantalla. React permite crear componentes, que son bloques de construcción que puedes reutilizar en diferentes partes de tu aplicación.</p>
+
+        <h3>¿Cómo se editan y modifican los archivos que actúan en el framework?</h3>
+        <p>Para editar los archivos de tu aplicación React, simplemente necesitas abrir el archivo correspondiente en tu editor de texto. Por ejemplo, para modificar lo que se muestra en la pantalla, puedes editar <code>App.js</code> como mencionamos anteriormente. Aquí hay algunos pasos básicos para editar archivos:</p>
+        <ul>
+            <li>Abre tu editor de texto (como Visual Studio Code).</li>
+            <li>Navega hasta la carpeta <code>src</code> de tu proyecto.</li>
+            <li>Haz doble clic en el archivo que deseas editar, por ejemplo, <code>App.js</code>.</li>
+            <li>Realiza los cambios que desees y guarda el archivo.</li>
+        </ul>
+
+        <h3>¿Cómo se referencian los archivos creados desde otras aplicaciones?</h3>
+        <p>Cuando creas una nueva aplicación en React, cada componente que creas se guarda en su propio archivo. Por ejemplo, si creas un nuevo componente llamado <code>Saludo.js</code>, necesitarás importar este componente en <code>App.js</code> para que pueda ser utilizado. Aquí te mostramos cómo hacerlo:</p>
+
+        <pre><code>import Saludo from './Saludo'; // Esto importa el componente Saludo</code></pre>
+
+        <p>Después de importarlo, puedes utilizar el componente dentro de la función <code>App</code> como si fuera una etiqueta HTML:</p>
+
+        <pre><code>function App() {
+    return (
+        <div className="App">
+            <Saludo /> {/* Aquí estamos usando el componente Saludo */}
+        </div>
+    );
+}</code></pre>
+
+        <h4>Consejo:</h4>
+        <p>Es importante asegurarse de que el nombre del archivo y el nombre del componente coincidan. Por ejemplo, si tu archivo se llama <code>Saludo.js</code>, el componente dentro de ese archivo debe llamarse <code>Saludo</code>.</p>
+    </section>
+
+    <!-- Enlace para regresar a la página de inicio -->
+    <footer>
+        <p><a href="index.html">Regresar a la Página de Inicio</a></p>
+    </footer>
+
+</body>
+</html>
